@@ -1,3 +1,4 @@
+from sre_constants import MAX_REPEAT
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -16,9 +17,9 @@ PORTALS = \
         "https://portal6.hcmus.edu.vn", \
     ]
 
-TARGETS = [(0, 20125010)]
-NUM_CYCLE = 1
-CYCLE_DURATION_IN_SECONDS = 60
+TARGETS = [(0, 20125010)] # protal site id and student id
+NUM_CYCLE = MAX_REPEAT
+CYCLE_DURATION_IN_SECONDS = 0
 
 driver = webdriver.Chrome()
 
